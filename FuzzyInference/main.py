@@ -17,9 +17,7 @@ relation = relation1.aggregate(relation2)
 
 def read_input_set(surface: list):
     print(f"Input fuzzy set for surface: {set(surface)}.\n"
-          f"Try like this: {FuzzySet("'a'/0.1; 'b'/0.2; 'c'/0.3")},\n"
-          f"where <a, b, c> items from surface and <0.1, 0.2, 0.3> values of the fuzzy "
-          f"set membership function.")
+          f"Try like this: {FuzzySet("800/0.2; 830/0.1; 860/0.3; 900/0.6")}.")
     in_set = input("Enter fuzzy set: ")
 
     fuzzy_set =  FuzzySet(in_set, surface)
